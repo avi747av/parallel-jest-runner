@@ -1,6 +1,6 @@
 {
   "name": "parallel-jest-runner",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Run Jest tests in parallel shards for faster execution",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
