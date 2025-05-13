@@ -1,6 +1,6 @@
 {
   "name": "parallel-jest-runner",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Run Jest tests in parallel shards for faster execution",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -9,7 +9,7 @@
   },
   "type": "module",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && node src/postbuild.js",
     "lint": "eslint src --ext .ts",
     "prepare": "npm run build",
     "publish:patch": "npm version patch && npm publish",
@@ -24,7 +24,7 @@
     "sharding",
     "performance"
   ],
-  "author": "Avi747av",
+  "author": "",
   "license": "MIT",
   "engines": {
     "node": ">=14.0.0"
@@ -37,8 +37,9 @@
     "nyc": ">=15.0.0"
   },
   "devDependencies": {
+    "@jest/globals": "^29.7.0",
     "@types/jest": "^29.5.5",
-    "@types/node": "^20.17.46",
+    "@types/node": "^20.8.2",
     "@typescript-eslint/eslint-plugin": "^6.7.4",
     "@typescript-eslint/parser": "^6.7.4",
     "eslint": "^8.50.0",
