@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { program } from "commander";
-import { runParallelTests } from "./runner";
-import { RunnerConfig } from "./types";
+import { runParallelTests } from "./runner.js";
+import { RunnerConfig } from "./types.js";
 import path from "path";
 import fs from "fs";
 
@@ -64,8 +64,7 @@ function getPackageVersion(): string {
   }
 }
 
-// // Run if directly executed
-// if (require.main === module) {
-//   startParallelJestRunner();
-// }
-startParallelJestRunner();
+// Run if directly executed
+if (require.main === module) {
+  startParallelJestRunner();
+}

@@ -7,8 +7,8 @@ import {
   RunnerConfig,
   ShardInfo,
   TestResult,
-} from "./types";
-import { mkdir, extractStats, parseTestStats, mergeShardStats } from "./utils";
+} from "./types.js";
+import { mkdir, extractStats, parseTestStats, mergeShardStats } from "./utils.js";
 
 /**
  * Run Jest tests in parallel shards

@@ -1,7 +1,6 @@
 import fs from "fs/promises";
 import { existsSync } from "fs";
-import * as path from "path";
-import { ShardInfo } from "./types";
+import { ShardInfo } from "./types.js";
 
 /**
  * Create a directory if it doesn't exist
