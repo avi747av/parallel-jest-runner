@@ -7,7 +7,7 @@
   "bin": {
     "parallel-jest-runner": "dist/cli.js"
   },
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "build": "tsc",
     "lint": "eslint src --ext .ts",

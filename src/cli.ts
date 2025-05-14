@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { program } from "commander";
-import { runParallelTests } from "./runner.js";
-import { RunnerConfig } from "./types.js";
+import { runParallelTests } from "./runner";
+import { RunnerConfig } from "./types";
 import path from "path";
 import fs from "fs";
 

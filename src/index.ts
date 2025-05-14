@@ -1,6 +1,6 @@
-export * from './runner.js';
-export * from './types.js';
-export { startParallelJestRunner } from './cli.js';
+export * from './runner';
+export * from './types';
+export { startParallelJestRunner } from './cli';
 
 // src/types.ts - Type definitions
 export interface RunnerConfig {
